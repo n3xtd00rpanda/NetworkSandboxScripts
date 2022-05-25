@@ -1,3 +1,4 @@
+# In this text file, configuration of the Cisco Switch can be seen as follow. To see all the current configuration of the switch the command show running-config is ran. 
 Switch>en 
 Switch#show run
 Switch#show running-config 
