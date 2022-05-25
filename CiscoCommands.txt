@@ -1,0 +1,20 @@
+ip access-list extended blind-cuckoo
+permit ip host 192.168.10.104 host 192.168.10.101
+exit
+ip access-list extended blind-vlan
+permit ip host 192.168.10.104 192.168.10.0 0.0.0.255
+exit
+vlan access-map vacl1 10
+match ip address blind-cuckoo
+action forward
+exit
+vlan access-map vacl1 20
+match ip address blind-vlan
+action drop
+exit
+vlan access-map vacl1 30
+action forward
+exit
+
+vlan filter vacl1 vlan-list 10
+exit
