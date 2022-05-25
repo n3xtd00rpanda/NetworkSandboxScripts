@@ -1,4 +1,4 @@
-# author @n3xtd00rpanda @accessgroup06 & alias Snowball
+# author @n3xtd00rpanda @accessgroup06 & @snowball44
 # Comments that aren't straight out comments are debugging flags 
 # & should only be enabled when needed
 
